@@ -7,7 +7,7 @@ import csv
 
 def capture_frame(stream_url):
     output_dir = "captured_images"
-    log_file = "error_log.csv"
+    log_file = "error_log.txt"
     retry_count = 3
 
     if not os.path.exists(output_dir):

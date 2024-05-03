@@ -15,7 +15,7 @@ output_folder = 'blobdrive/t'  # Folder to save processed images
 processed_files = set()  # To keep track of processed files
 
 def send_data_to_server(data):
-    url = "http://192.168.29.151:3000/api/post-analytics"
+    url = "https://ai-analytics-election-igrgh.ondigitalocean.app/api/post-analytics"
     try:
         response = requests.post(url, json=data)
         print(f"Data sent to server: {response.status_code}, {response.text}")
